@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-3 </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   
+    <div class="container">
+        <h5> ITMD 541 Lab-3 vishnuvardhan Lingampally</h5>
+        <h1>Tip Calculator</h1>  
+      <div class="bill-total">
+        <label for="bill-total-input">Bill Total:</label>
+        <input type="text" id="bill-total-input" defaultvalue="0">
+      </div>
+  
+      <div class="tip-percentage">
+        <label for="tip-percentage-input">Tip:</label>
+        <input type="range" id="tip-percentage-input" min="0" max="100" value="0">
+      </div>
+
+      <div class="tip-percentage-display">
+        <label for="tip-percentage-display">Tip-percentage:</label>
+        <input type="text" id="tip-percentage-display" disabled>
+      </div>
+  
+      <div class="tip-amount">
+        <label for="tip-amount-input">Tip Amount:</label>
+        <input type="text" id="tip-amount-input"  disabled>
+      </div>
+  
+      <div class="total-bill-with-tip">
+        <label for="total-bill-with-tip-input">Total Bill with Tip:</label>
+        <input type="text" id="total-bill-with-tip-input"  disabled>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
