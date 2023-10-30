@@ -9,11 +9,14 @@ h1
   text-align: center;
   
 }
-
+body{
+  background-color: rgb(186, 186, 221);
+}
 
 .container {
     width: 500px;
     margin: auto;
+    margin-top: 50px;
     padding: 1px;
     background-color: rgb(228, 235, 235);
     border-radius:10px ;
@@ -68,14 +71,6 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -8px;
 }
 
-/* for fire fox*/
-/*input[type=range]:-moz-range-track {
-  width: 200px;
-  height: 5px;
-  background: #000;
-  border: none;
-  border-radius: 5px;
-}*/
 
 input[type=range]::-moz-range-track {
   width: 200px;

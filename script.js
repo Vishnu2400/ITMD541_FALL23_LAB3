@@ -13,7 +13,10 @@ function validateBillTotal(billTotal) {
 // Update the calculateTip() function to call the validateBillTotal() function
 function calculateTip() {
 
-  var billTotal ,tipPercentage,tipAmount= NaN,totalBillWithTip;
+  var billTotal ,tipPercentage,tipAmount,totalBillWithTip;
+  var rangeSlider = document.getElementById("tip-percentage-input");
+
+
 
   billTotal = document.getElementById('bill-total-input').value;
 
@@ -34,11 +37,15 @@ function calculateTip() {
 
     tipAmount=0;
     totalBillWithTip=0;
+    tipPercentage=0;
+    rangeSlider.value=0;
+
 
   }
   
 
   // Set the values of the tip amount and total bill with tip fields
+  
   document.getElementById('tip-percentage-display').value = tipPercentage.toFixed(2);
   document.getElementById('tip-amount-input').value = tipAmount.toFixed(2);
   document.getElementById('total-bill-with-tip-input').value = totalBillWithTip.toFixed(2);
